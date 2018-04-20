@@ -1,3 +1,8 @@
 page-home {
-
+    .danger {
+        color: map-get($colors, danger);
+    }
+    .success {
+        color: map-get($colors, success);
+    }
 }
