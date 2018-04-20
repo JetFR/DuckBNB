@@ -1,36 +1,17 @@
 <ion-header>
-    <ion-navbar color="dark-theme">
-    <ion-title>Accueil</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>Home</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  
-  
-  <ion-list>
-  <h3>LES CRYPTOMONNAIES</h3>
-  <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
-    {{ item.title }} vaut {{ item.price }} {{ item.currency }}
-    
-  </button>  
-</ion-list>
- <ion-list>
- <h3>Les dernières transactions</h3>
-  
-  <button ion-item *ngFor="let transaction of transactions" (click)="allTransactions(transaction)">
-      <span *ngIf='transaction.type == 1' class="success"><ion-icon name="happy"> </ion-icon></span>
-       <span *ngIf='transaction.type == 0' class="danger"><ion-icon name="sad"> </ion-icon></span>
-    {{ transaction.sender }} 
-    <span *ngIf='transaction.type == 1' class="success">a reçu</span> 
-    <span *ngIf='transaction.type == 0' class="danger">a donné</span> 
-    {{ transaction.amount }} 
-    <span *ngIf='transaction.type == 1'>de</span> 
-      <span *ngIf='transaction.type == 0'>à</span>
-    {{ transaction.recipient }}
-    
-   
- 
-  </button>
-   
-</ion-list>
+  <h2>Welcome to Ionic!</h2>
+  <p>
+    This starter project comes with simple tabs-based layout for apps
+    that are going to primarily use a Tabbed UI.
+  </p>
+  <p>
+    Take a look at the <code>src/pages/</code> directory to add or change tabs,
+    update any existing page or create new pages.
+  </p>
 </ion-content>
