@@ -3,14 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { MiningPage } from '../pages/mining/mining';
-import { WalletPage } from '../pages/wallet/wallet';
 import { HomePage } from '../pages/home/home';
 
 import { ProfilePage } from '../pages/profile/profile';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
-import { SettingsPage } from '../pages/settings/settings';
 import { ModifPage } from '../pages/profile/modif/modif';
 
 
@@ -20,14 +17,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    MiningPage,
-    WalletPage,
     HomePage,
     
     ProfilePage,
     ModifPage,
     LoginPage,
-    SettingsPage,
     TabsPage
   ],
   imports: [
@@ -37,14 +31,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    MiningPage,
-    WalletPage,
     HomePage,
    
     ProfilePage,
     ModifPage,
     LoginPage,
-    SettingsPage,
     TabsPage
   ],
   providers: [
