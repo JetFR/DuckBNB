@@ -1,35 +1,17 @@
-<ion-header>
-  <ion-navbar color="primary">
-    <ion-title>Home</ion-title>
-  </ion-navbar>
-</ion-header>
+<!--<ion-header>-->
+  <!--<ion-navbar color="primary">-->
+    <!--<ion-title>Home</ion-title>-->
+  <!--</ion-navbar>-->
+<!--</ion-header>-->
 
 <ion-content>
-  <!--<mbsc-form>-->
-  <!--<div class="mbsc-form-group">-->
-  <!--<div class="mbsc-form-group-title">Country picker</div>-->
-  <!--<label>-->
-  <!--Group wheel-->
-  <!--<input [(ngModel)]="select" mbsc-select [mbsc-options]="selectSettings" [mbsc-data]="myData" />-->
-  <!--</label>-->
-  <!--<label>-->
-  <!--Filter-->
-  <!--<input [(ngModel)]="filter" mbsc-select [mbsc-options]="filterSettings" [mbsc-data]="myData" />-->
-  <!--</label>-->
-  <!--</div>-->
-  <!--<div class="mbsc-form-group mbsc-padding">-->
-  <!--<p class="mbsc-thin">Use it on any element or non-mobiscroll form.</p>-->
-  <!--</div>-->
-  <!--</mbsc-form>-->
-  <!--<ion-item>-->
-  <!--<ion-label>Select</ion-label>-->
-  <!--<ion-input [(ngModel)]="myselect" mbsc-select [mbsc-options]="myselectSettings" [mbsc-data]="myData"></ion-input>-->
-  <!--</ion-item>-->
-  <!--<ion-item>-->
-  <!--<ion-label>External button</ion-label>-->
-  <!--<ion-input [(ngModel)]="external" mbsc-select [mbsc-options]="externalSettings" [mbsc-data]="myData" #externalSelect="mobiscroll"></ion-input>-->
-  <!--<button ion-button item-right (click)="externalSelect.instance.show()">Show</button>-->
-  <!--</ion-item>-->
+
+  <ion-row class="bg-header">
+    <ion-col>
+      <h1>Trouver des logements sur DuckBnB</h1>
+      <h2>Découvrez des chambres privées ou des logements entiers, parfaitement adaptés à tout type de voyage</h2>
+    </ion-col>
+  </ion-row>
 
   <ion-list>
     <ion-item>
@@ -72,33 +54,68 @@
     </ion-select>
   </ion-item>
 
-  <div text-center class="row">
-      <button ion-button padding margin-bottom round inline-block color="primary" (click)="gotoTabs()">Rechercher</button>
+  <ion-row text-center>
+    <button ion-button padding margin-bottom round inline-block color="primary" (click)="gotoTabs()">Rechercher</button>
+  </ion-row>
+
+  <div class="row">
+    <h2>Logements en France</h2>
   </div>
 
   <ion-card>
-    <img src="assets/imgs/nin-live.png"/>
+    <img src="assets/imgs/chambre1_1.jpg"/>
     <ion-card-content>
+      <span>Chambre Privée | Nazelles-Négron</span>
       <ion-card-title>
-        Nine Inch Nails Live
+        Amboise Troglodyte/Chez Hélène
       </ion-card-title>
       <p>
-        The most popular industrial group ever, and largely
-        responsible for bringing the music to a mass audience.
+        98 € par nuit - Annulation Gratuite
       </p>
+      <p>
+        <ion-icon name="ios-star"></ion-icon>
+        <ion-icon name="ios-star"></ion-icon>
+        <ion-icon name="ios-star"></ion-icon>
+        <ion-icon name="ios-star"></ion-icon>
+        <ion-icon name="ios-star"></ion-icon>
+          356 avis client
+      </p>
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/imgs/lorie.jpg">
+        </ion-avatar>
+        <h2>Lorie Prester</h2>
+        <p>Ta meilleure amie</p>
+      </ion-item>
     </ion-card-content>
   </ion-card>
 
   <ion-card>
-    <img src="assets/imgs/nin-live.png"/>
+    <img src="assets/imgs/chambre2_1.jpg"/>
     <ion-card-content>
+      <span>Logement entier | Londres</span>
       <ion-card-title>
-        Nine Inch Nails Live
+        Light and Spacious Garden Flat<br/>
+        London
       </ion-card-title>
       <p>
-        The most popular industrial group ever, and largely
-        responsible for bringing the music to a mass audience.
+        164 € par nuit - Annulation Gratuite
       </p>
+      <p>
+        <ion-icon name="ios-star"></ion-icon>
+        <ion-icon name="ios-star"></ion-icon>
+        <ion-icon name="ios-star"></ion-icon>
+        <ion-icon name="ios-star"></ion-icon>
+        <ion-icon name="ios-star-half"></ion-icon>
+        177 avis client
+      </p>
+      <ion-item no-padding>
+        <ion-avatar item-start>
+          <img src="assets/imgs/henry.jpg">
+        </ion-avatar>
+        <h2>Henry de Sussex</h2>
+        <p>Le petit prince</p>
+      </ion-item>
     </ion-card-content>
   </ion-card>
 

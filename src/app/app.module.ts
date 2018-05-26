@@ -23,8 +23,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     LoginPage,
     TabsPage
   ],
-  imports: [ 
-    FormsModule, 
+  imports: [
+    FormsModule,
     MbscModule,
     BrowserModule,
     IonicModule.forRoot(MyApp)
