@@ -1,8 +1,9 @@
 page-profile {
-.scroll-content {
-        overflow-y: hidden;
+    .picture {
+        font-size: 14em;
     }
-    .icon {
-        font-size: 8em;
+    p {
+        color: rgba(0,0,0,.8);
+        font-style: italic;
     }
 }
