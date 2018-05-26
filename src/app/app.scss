@@ -3,6 +3,15 @@
   padding-left: 0;
 }
 
+.swiper-pagination-bullet {
+  background: #fff;
+  opacity: .5;
+}
+.swiper-pagination-bullet-active {
+  background: map_get($colors, primary);
+  opacity: 1;
+}
+
 // App Global Sass
 // --------------------------------------------------
 // Put style rules here that you want to apply globally. These

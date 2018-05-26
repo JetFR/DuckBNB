@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
-import { HomePage } from '../home';
+import { ProfilePage } from '../profile';
 /**
  * Generated class for the ModifPage page.
  *
@@ -11,11 +11,15 @@ import { HomePage } from '../home';
 
 @IonicPage()
 @Component({
-  templateUrl: 'residence.html',
+  selector: 'page-modif',
+  templateUrl: 'modif.html',
 })
-export class ResidencePage {
-
+export class ModifPage {
+    public event = {
+        age: '1990-02-19',
+    };
+    gender: string = "m";
     constructor(public navCtrl: NavController) {}
-    ionViewDidLoad() { console.log('ionViewDidLoad ResidencePage');}
+    ionViewDidLoad() { console.log('ionViewDidLoad ModifPage');}
     
 }

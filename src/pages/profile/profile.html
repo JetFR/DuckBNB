@@ -16,54 +16,17 @@
     <ion-row>
         <ion-col padding text-center>
             <ion-icon class="picture" name="contact" color="dark">  </ion-icon>
-            <h1>John Doe</h1>
+            <h1>John Doe, 31 ans</h1>
+            <p>Vous accueillir avec le sourire, faire votre bonheur avec de petites attentions. Sans prise de tête ! </p>
             <ion-icon color="primary" name="star"></ion-icon>
             <ion-icon color="primary" name="star"></ion-icon>
             <ion-icon color="primary" name="star"></ion-icon>
             <ion-icon color="primary" name="star-half"></ion-icon>
             <ion-icon color="primary" name="star-outline"></ion-icon>
             <p>13 avis</p>
-        </ion-col>
-    </ion-row>
-    <ion-row>
-        <ion-col>
-            <ion-item margin-bottom block>
-                <ion-label stacked>Nom</ion-label>
-                <ion-input type="text" value="John"></ion-input>
-            </ion-item>
-            <ion-item margin-bottom block>
-                <ion-label stacked>Prénom</ion-label>
-                <ion-input type="text" value="Doe"></ion-input>
-            </ion-item>
-            <ion-item margin-bottom block>
-                <ion-label stacked>Date de naissance</ion-label>
-                <ion-datetime displayFormat="MMM DD YYYY" [(ngModel)]="event.age"></ion-datetime>
-            </ion-item>
-            <ion-item margin-bottom block>
-                <ion-label stacked>Email</ion-label>
-                <ion-input type="email" value="john.doe@gmail.com"></ion-input>
-            </ion-item>
-            <ion-item margin-bottom block>
-                <ion-label stacked>Sexe</ion-label>
-                <ion-select [(ngModel)]="gender">
-                    <ion-option value="f">Féminin</ion-option>
-                    <ion-option value="m">Masculin</ion-option>
-                </ion-select>
-            </ion-item>
-            <ion-item margin-bottom block>
-                <ion-label stacked>Changez mot de passe</ion-label>
-                <ion-input type="password" placeholder="Nouveau mot de passe"></ion-input>
-            </ion-item>
-            <ion-item margin-bottom block>
-                <ion-label stacked>Confirmez le nouveau mot de passe</ion-label>
-                <ion-input type="password" placeholder="Nouveau mot de passe"></ion-input>
-            </ion-item>
-            <ion-textarea></ion-textarea>
-        </ion-col>
-    </ion-row>
-    <ion-row padding>
-        <ion-col>
-            <button ion-button block color="primary">Enregistrer</button>
+            <div text-center>
+                <button class="modif-button" ion-button padding margin-bottom round color="primary" (click)="modifProfile()">Modifier</button>
+            </div>
         </ion-col>
     </ion-row>
 </ion-content>
