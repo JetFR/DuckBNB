@@ -6,12 +6,9 @@ page-login {
         background: color($colors, dark, base);
         color: color($colors, dark, contrast);
     }
-    .fixed-content {
-        background: color($colors, dark, base);
-        color: color($colors, dark, contrast);
-    }
+
     hr {
         height: 1px !important;
         background-color: $text-color !important;
     }
-}    
+}

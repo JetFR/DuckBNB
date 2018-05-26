@@ -18,7 +18,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    
+
     ProfilePage,
     ModifPage,
     LoginPage,
