@@ -4,14 +4,114 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+<ion-content>
+  <!--<mbsc-form>-->
+  <!--<div class="mbsc-form-group">-->
+  <!--<div class="mbsc-form-group-title">Country picker</div>-->
+  <!--<label>-->
+  <!--Group wheel-->
+  <!--<input [(ngModel)]="select" mbsc-select [mbsc-options]="selectSettings" [mbsc-data]="myData" />-->
+  <!--</label>-->
+  <!--<label>-->
+  <!--Filter-->
+  <!--<input [(ngModel)]="filter" mbsc-select [mbsc-options]="filterSettings" [mbsc-data]="myData" />-->
+  <!--</label>-->
+  <!--</div>-->
+  <!--<div class="mbsc-form-group mbsc-padding">-->
+  <!--<p class="mbsc-thin">Use it on any element or non-mobiscroll form.</p>-->
+  <!--</div>-->
+  <!--</mbsc-form>-->
+  <!--<ion-item>-->
+  <!--<ion-label>Select</ion-label>-->
+  <!--<ion-input [(ngModel)]="myselect" mbsc-select [mbsc-options]="myselectSettings" [mbsc-data]="myData"></ion-input>-->
+  <!--</ion-item>-->
+  <!--<ion-item>-->
+  <!--<ion-label>External button</ion-label>-->
+  <!--<ion-input [(ngModel)]="external" mbsc-select [mbsc-options]="externalSettings" [mbsc-data]="myData" #externalSelect="mobiscroll"></ion-input>-->
+  <!--<button ion-button item-right (click)="externalSelect.instance.show()">Show</button>-->
+  <!--</ion-item>-->
+
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Où</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-label>Date d'arrivée</ion-label>
+    <ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="myDate"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Date de départ</ion-label>
+    <ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="endDate"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Adultes</ion-label>
+    <ion-select [(ngModel)]="adultes">
+      <ion-option value="1">1 Adulte</ion-option>
+      <ion-option value="2">2 Adultes</ion-option>
+      <ion-option value="3">3 Adultes</ion-option>
+      <ion-option value="4">4 Adultes</ion-option>
+      <ion-option value="5">5 Adultes</ion-option>
+      <ion-option value="6">6 Adultes</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Enfants</ion-label>
+    <ion-select [(ngModel)]="enfants">
+      <ion-option value="1">1 Enfant</ion-option>
+      <ion-option value="2">2 Enfants</ion-option>
+      <ion-option value="3">3 Enfants</ion-option>
+      <ion-option value="4">4 Enfants</ion-option>
+      <ion-option value="5">5 Enfants</ion-option>
+      <ion-option value="6">6 Enfants</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <div text-center class="row">
+      <button ion-button padding margin-bottom round inline-block color="primary" (click)="gotoTabs()">Rechercher</button>
+  </div>
+
+  <ion-card>
+    <img src="assets/imgs/nin-live.png"/>
+    <ion-card-content>
+      <ion-card-title>
+        Nine Inch Nails Live
+      </ion-card-title>
+      <p>
+        The most popular industrial group ever, and largely
+        responsible for bringing the music to a mass audience.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <img src="assets/imgs/nin-live.png"/>
+    <ion-card-content>
+      <ion-card-title>
+        Nine Inch Nails Live
+      </ion-card-title>
+      <p>
+        The most popular industrial group ever, and largely
+        responsible for bringing the music to a mass audience.
+      </p>
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
+
+<!--<ion-content padding>-->
+<!--<h2>Welcome to Ionic!</h2>-->
+<!--<p>-->
+<!--This starter project comes with simple tabs-based layout for apps-->
+<!--that are going to primarily use a Tabbed UI.-->
+<!--</p>-->
+<!--<p>-->
+<!--Take a look at the <code>src/pages/</code> directory to add or change tabs,-->
+<!--update any existing page or create new pages.-->
+<!--</p>-->
+<!--</ion-content>-->
