@@ -8,7 +8,6 @@ import { HomePage } from '../pages/home/home';
 import { ProfilePage } from '../pages/profile/profile';
 import { TabsPage } from '../pages/tabs/tabs';
 import { LoginPage } from '../pages/login/login';
-import { ModifPage } from '../pages/profile/modif/modif';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -18,9 +17,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-
     ProfilePage,
-    ModifPage,
     LoginPage,
     TabsPage
   ],
@@ -32,9 +29,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-   
     ProfilePage,
-    ModifPage,
     LoginPage,
     TabsPage
   ],
