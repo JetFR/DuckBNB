@@ -20,14 +20,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-
     ProfilePage,
     ModifPage,
     LoginPage,
     TabsPage
   ],
-  imports: [ 
-    FormsModule, 
+  imports: [
+    FormsModule,
     MbscModule,
     BrowserModule,
     IonicModule.forRoot(MyApp)
@@ -36,7 +35,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-   
     ProfilePage,
     ModifPage,
     LoginPage,
