@@ -1,28 +1,33 @@
 page-home {
-  .bg-header {
-    background-image: url(../assets/imgs/chambre2_2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    //filter: brightness(0.5);
-    ion-col {
-      color: #FFFFFF ;
+  ion-content {
+    .bg-header {
+      background-image: url(../assets/imgs/chambre2_2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      ion-col {
+        color: #FFFFFF ;
+        background-color: rgba(50, 50, 50, 0.50);
+        width: 100%;
+        height: 100%;
+      }
     }
-  }
-  ion-card-content {
-    ion-icon {
-      color: #302bf3
-    }
-    ion-card-title {
-      font-weight: 600;
-    }
-    span {
-      text-transform: uppercase;
-      font-weight: 600;
-      color: #302bf3;
-    }
-    p {
-      &:last-child {
-        font-style: italic;
+    ion-card-content {
+      ion-icon {
+        color: #302bf3
+      }
+      ion-card-title {
+        font-weight: 600;
+      }
+      span {
+        text-transform: uppercase;
+        font-weight: 600;
+        color: #302bf3;
+      }
+      p {
+        &:last-child {
+          font-style: italic;
+        }
       }
     }
   }
