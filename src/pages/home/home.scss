@@ -2,11 +2,12 @@ page-home {
   ion-content {
     .bg-header {
       position: relative;
+      overflow: hidden;
       img {
         z-index: 10;
         position: absolute;
         width: 100%;
-        height: 100%;
+        height: auto;
         left: 0;
         top: 0;
       }

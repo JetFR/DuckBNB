@@ -21,7 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
     ProfilePage,
-      ModifPage,
+    ModifPage,
     LoginPage,
     TabsPage
   ],
@@ -33,7 +33,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-      ModifPage,
+    ModifPage,
     HomePage,
     ProfilePage,
     LoginPage,
