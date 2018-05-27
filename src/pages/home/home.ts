@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+
+import { LogementPage } from '../home/logement/logement';
 
 
 @Component({
@@ -11,6 +13,10 @@ export class HomePage {
 
   constructor(public navCtrl: NavController) {
 
+  }
+
+  logementPage() {
+    this.navCtrl.push(LogementPage);
   }
 
 }
