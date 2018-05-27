@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 
 import { HomePage } from '../pages/home/home';
 import { LogementPage } from '../pages/home/logement/logement';
+import { LogementbisPage } from '../pages/home/logementbis/logementbis';
 
 import { ProfilePage } from '../pages/profile/profile';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -22,6 +23,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     MyApp,
     HomePage,
       LogementPage,
+      LogementbisPage,
     ProfilePage,
     ModifPage,
     LoginPage,
@@ -38,6 +40,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ModifPage,
     HomePage,
       LogementPage,
+      LogementbisPage,
     ProfilePage,
     LoginPage,
     TabsPage
